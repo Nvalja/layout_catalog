@@ -19,6 +19,7 @@
     line-height: $header-size;
     color: black;
     @include fontTitleLinks;
+    transition: color $smoothTime / 3;
   }
   
   &__link:hover ,
