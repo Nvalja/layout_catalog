@@ -83,7 +83,7 @@
     text-transform: uppercase;
     @include fontButton;
     line-height: 16px;
-    transition: all $smoothTime;
+    transition: background-color $smoothTime, color $smoothTime;
 
     &:hover {
       background-color: transparent;

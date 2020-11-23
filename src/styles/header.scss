@@ -11,9 +11,5 @@
     height: 40px;
     width: 40px;
     transition: transform $smoothTime;
-    
-    &:hover {
-      transform: scale(-1.2, 1.2);
-    }
   }
 }
