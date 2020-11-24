@@ -1,20 +1,17 @@
 @import "fonts";
 
 .nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  column-gap: 20px;
 
   &__element {
-    display: flex;
     position: relative;
-    flex: 0 0 auto;
-    height: $header-size;
-  }
-  
-  &__element:not(:last-child) {
-    margin-right: 20px;
   }
   
   &__link {
+    display: inline-block;
+    white-space: nowrap;
     text-transform: uppercase;
     line-height: $header-size;
     color: black;

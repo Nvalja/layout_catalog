@@ -3,30 +3,14 @@
 @import "variables";
 @import "header";
 @import "nav";
+@import "catalog";
 @import "card";
 @import "stars";
 
-.page {
-  background-color: #fff;
+.main {
+  margin-top: 50px;
 
   &__catalog {
-    margin-top: 50px;
-  }
-}
-
-.catalog {
-  display: flex;
-  justify-content: center;
-
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 1024px;
-    padding: 0 40px;
-  }
-
-  &__card {
-    margin-bottom: 50px;
+    margin: 0 auto;
   }
 }
