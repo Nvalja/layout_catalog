@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  border: 1px solid #f3f3f3;
+  width: $cardWidth;
+  border: 1px solid $bodersColor;
   border-radius: 5px;
-  padding: 30px 14px 15px;
+  padding: 15px 14px;
 
   &__image {
     display: flex;
@@ -15,14 +15,22 @@
   }
 
   &__picture {
-    height: 134px;
-    width: 160px;
+    height: 164px;
+    width: 166px;
+    border: 3px solid #fff;
+    padding: 12px 0;
+    transition: transform $smoothTime;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: $bodersColor;
+    }
   }
   
   &__title {
     @include fontTitleLinks;
     line-height: 15px;
-    margin-top: 45px;
+    margin-top: 30px;
   }
   
   &__cod {
@@ -75,6 +83,7 @@
     text-transform: uppercase;
     @include fontButton;
     line-height: 16px;
+    transition: background-color $smoothTime, color $smoothTime;
 
     &:hover {
       background-color: transparent;

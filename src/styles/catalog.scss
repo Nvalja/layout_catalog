@@ -1,0 +1,7 @@
+.catalog {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, $cardWidth);
+  gap: 50px 48px;
+  max-width: $cardWidth * 4 + 48px * 3;
+}
